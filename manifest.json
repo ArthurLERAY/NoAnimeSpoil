@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "NoAnimeSpoil",
+  "version": "1.0",
+  "description": "Hide YouTube videos containing anime spoils",
+  "permissions": ["storage", "https://www.youtube.com/"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
